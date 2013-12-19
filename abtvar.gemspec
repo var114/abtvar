@@ -8,12 +8,12 @@ Gem::Specification.new do |spec|
   spec.version       = Abtvar::VERSION
   spec.authors       = ["Patil Varvarian"]
   spec.email         = ["Patil.Varvarian@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Implementation of Superflight code}
+  spec.summary       = %q{Gem for ruby off rails. Do not use}
   spec.homepage      = ""
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files`.split($/)
+  spec.files         = `git ls-files`.split($\)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
