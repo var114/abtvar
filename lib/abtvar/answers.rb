@@ -13,9 +13,10 @@
           end
         end
 
-    def awesome_reply
+    def awesome
       reply = @answer_select.sample 
     end
+
   end
 end
 
