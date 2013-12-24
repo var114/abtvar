@@ -1,14 +1,21 @@
-class Bio
+module Abtvar
 
-  def about(answer)
-    if answer == 'Y'
-       "Because she can code in Ruby"
-    else
-        "You suck JavaChips"
+  class Bio
+  
+      attr_reader :answer_select , :answers
+
+      def initialize
+        @answer_select = []
+        @answers = ["She can code in Ruby", "She has a dog named Lulu", "She never quite learned how to ride a bike",
+          "She's seen all Die Hard Movies", "She only uses chopsticks to eat her food"]
+          @answers.each do |x|
+            @answer_select << x
+          end
+        end
+
+    def awesome_reply
+      reply = @answer_select.sample 
     end
   end
-
-
-
 end
 
