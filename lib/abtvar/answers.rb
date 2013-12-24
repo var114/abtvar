@@ -1,17 +1,17 @@
 class Bio
 
-attr_reader :answerY, :answerX
+attr_reader :answer_x, :answer_y
 
   def initialize 
-    answerY = ''
-    answerX = ''
+    answer_x = ''
+    answer_y= ''
   end
 
-  def aboutVar(answer)
+  def about(answer)
     if answer == 'Y'
-      puts "Because she can code in Ruby"
+       "Because she can code in Ruby"
     else
-      puts "You suck JavaChips"
+        "You suck JavaChips"
     end
   end
 
