@@ -1,21 +1,25 @@
-
-
-  class Bio
+module Abtvar
   
-      attr_reader :answer_select , :answers
+  module AboutMe
 
-      def initialize
-        @answer_select = []
-        @answers = ["She can code in Ruby", "She has a dog named Lulu", "She never quite learned how to ride a bike",
-          "She's seen all Die Hard Movies", "She only uses chopsticks to eat her food"]
-          @answers.each do |x|
-            @answer_select << x
+    class Bio
+    
+        attr_reader :answer_select , :answers
+
+        def initialize
+          @answer_select = []
+          @answers = ["She can code in Ruby", "She has a dog named Lulu", "She never quite learned how to ride a bike",
+            "She's seen all Die Hard Movies", "She only uses chopsticks to eat her food"]
+            @answers.each do |x|
+              @answer_select << x
+            end
           end
-        end
 
-    def awesome
-      reply = @answer_select.sample 
+      def awesome
+        reply = @answer_select.sample 
+      end
     end
 
   end
+end
 
