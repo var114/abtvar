@@ -1,6 +1,5 @@
 module Abtvar
   
-  module About
 
     class Bio
     
@@ -20,6 +19,5 @@ module Abtvar
       end
     end
 
-  end
 end
 
