@@ -1,6 +1,6 @@
 module Abtvar
   
-  module AboutMe
+  module About
 
     class Bio
     
@@ -15,7 +15,7 @@ module Abtvar
             end
           end
 
-      def awesome
+      def awesome_reply
         reply = @answer_select.sample 
       end
     end
